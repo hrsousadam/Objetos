@@ -1,0 +1,31 @@
+<html>
+<body>
+    <script>
+        function Pessoa() {
+            this.nome = "Henrique";
+            this.idade = 42;
+            this.sexo = "M";
+            this.printNome = function () {
+                alert(this.nome);
+            }
+        }
+
+        function Noticia() {
+            this.titulo = "Notícia 1";
+            this.descricao = "Descrição da notícia 1";
+            this.data = "01/01/2019";
+            this.printNoticia = function () {
+                alert(this.titulo);
+            }
+        }
+
+        var pessoa = new Pessoa();
+        var pessoa_2 = new Pessoa();
+
+        pessoa.nome = "Maria";
+
+        pessoa.printNome(); // Removed parameter from the function call
+
+    </script>
+</body>
+</html>
